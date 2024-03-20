@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-3xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl font-bold;
+  }
+
+  h3 {
+    @apply text-xl font-bold;
+  }
+  h4 {
+    @apply text-lg font-bold;
+  }
+
+  p {
+    @apply text-sm;
+  }
+
+  /* Slider Area */
+  .gradient-background {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 10;
+  }
+  .slider-image {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  /* ... */
+}
+
+/* Hero style */
+.gradient-background {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  z-index: 10;
+}
