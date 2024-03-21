@@ -1,5 +1,5 @@
-import { AlignJustify, XCircle } from "lucide-react";
-import { useState } from "react";
+import { AlignJustify, Moon, Sun, XCircle } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo/logo.png";
 import { Button } from "../ui/button";
@@ -15,10 +15,30 @@ const Navbar = () => {
     dispatch(logout());
   };
 
+  // Dark Mood
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [theme, setTheme] = useState("light");
+
+  // Dark Or Light Mood effect
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  // Dark Or Light Mood handler
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <header>
       {/* Main Navigation Menu */}
-      <nav className="relative flex items-center justify-between py-5 px-4 lg:px-20">
+      <nav className="relative flex items-center justify-between dark:bg-slate-800 dark:text-white py-5 px-4 lg:px-20">
         {/* Logo section */}
         <Link to="/">
           <img className="w-20" src={logo} alt="iEvent Logo" />
@@ -26,41 +46,71 @@ const Navbar = () => {
         {/* Nav Items Section */}
         <ul className="items-center hidden space-x-8 lg:flex">
           <li>
-            <NavLink to="/" className="text-slate-950 font-semibold">
+            <NavLink
+              to="/"
+              className="text-slate-950 dark:text-white font-semibold"
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about-us" className="text-slate-950 font-semibold">
+            <NavLink
+              to="/about-us"
+              className="text-slate-950 dark:text-white font-semibold"
+            >
               About Us
             </NavLink>
           </li>
           <li>
-            <NavLink to="/supplies" className="text-slate-950 font-semibold">
+            <NavLink
+              to="/supplies"
+              className="text-slate-950 dark:text-white font-semibold"
+            >
               All Supplies
             </NavLink>
           </li>
           <li>
-            <NavLink to="/volunteer" className="text-slate-950 font-semibold">
+            <NavLink
+              to="/volunteer"
+              className="text-slate-950 dark:text-white font-semibold"
+            >
               Volunteer
             </NavLink>
           </li>
           <li>
-            <NavLink to="/community" className="text-slate-950 font-semibold">
+            <NavLink
+              to="/community"
+              className="text-slate-950 dark:text-white font-semibold"
+            >
               Community
             </NavLink>
           </li>
           <li>
-            <NavLink to="/leaderboard" className="text-slate-950 font-semibold">
+            <NavLink
+              to="/leaderboard"
+              className="text-slate-950 dark:text-white font-semibold"
+            >
               Leaderboard
             </NavLink>
           </li>
+          <div className="cursor-pointer">
+            {isDarkMode ? (
+              <div className="text-xl" onClick={handleThemeSwitch}>
+                <Sun />
+              </div>
+            ) : (
+              <div className="text-xl" onClick={handleThemeSwitch}>
+                <Moon />
+              </div>
+            )}
+          </div>
+
           {user?.email ? (
             <>
               <li>
                 <NavLink
                   to="/dashboard"
-                  className="text-slate-950 font-semibold"
+                  className="text-slate-950 dark:text-white font-semibold"
                 >
                   Dashboard
                 </NavLink>
@@ -73,7 +123,10 @@ const Navbar = () => {
           ) : (
             <>
               <li>
-                <NavLink to="/login" className="text-slate-950 font-semibold">
+                <NavLink
+                  to="/login"
+                  className="text-slate-950 dark:text-white font-semibold"
+                >
                   Login
                 </NavLink>
               </li>
@@ -118,7 +171,7 @@ const Navbar = () => {
                       <li>
                         <NavLink
                           to="/"
-                          className="text-slate-950 font-semibold"
+                          className="text-slate-950 dark:text-white font-semibold"
                         >
                           Home
                         </NavLink>
@@ -126,7 +179,7 @@ const Navbar = () => {
                       <li>
                         <NavLink
                           to="/about-us"
-                          className="text-slate-950 font-semibold"
+                          className="text-slate-950 dark:text-white font-semibold"
                         >
                           About Us
                         </NavLink>
@@ -134,7 +187,7 @@ const Navbar = () => {
                       <li>
                         <NavLink
                           to="/supplies"
-                          className="text-slate-950 font-semibold"
+                          className="text-slate-950 dark:text-white font-semibold"
                         >
                           All Supplies
                         </NavLink>
@@ -142,7 +195,7 @@ const Navbar = () => {
                       <li>
                         <NavLink
                           to="/volunteer"
-                          className="text-slate-950 font-semibold"
+                          className="text-slate-950 dark:text-white font-semibold"
                         >
                           Volunteer
                         </NavLink>
@@ -150,7 +203,7 @@ const Navbar = () => {
                       <li>
                         <NavLink
                           to="/community"
-                          className="text-slate-950 font-semibold"
+                          className="text-slate-950 dark:text-white font-semibold"
                         >
                           Community
                         </NavLink>
@@ -158,17 +211,29 @@ const Navbar = () => {
                       <li>
                         <NavLink
                           to="/leaderboard"
-                          className="text-slate-950 font-semibold"
+                          className="text-slate-950 dark:text-white font-semibold"
                         >
                           Leaderboard
                         </NavLink>
                       </li>
+                      <div className="cursor-pointer">
+                        {isDarkMode ? (
+                          <div className="text-xl" onClick={handleThemeSwitch}>
+                            <Sun />
+                          </div>
+                        ) : (
+                          <div className="text-xl" onClick={handleThemeSwitch}>
+                            <Moon />
+                          </div>
+                        )}
+                      </div>
+
                       {user?.email ? (
                         <>
                           <li>
                             <NavLink
                               to="/dashboard"
-                              className="text-slate-950 font-semibold"
+                              className="text-slate-950 dark:text-white font-semibold"
                             >
                               Dashboard
                             </NavLink>
@@ -183,7 +248,7 @@ const Navbar = () => {
                           <li>
                             <NavLink
                               to="/login"
-                              className="text-slate-950 font-semibold"
+                              className="text-slate-950 dark:text-white font-semibold"
                             >
                               Login
                             </NavLink>
