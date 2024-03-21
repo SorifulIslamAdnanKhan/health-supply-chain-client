@@ -45,6 +45,11 @@ const Navbar = () => {
               Volunteer
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/community" className="text-slate-950 font-semibold">
+              Community
+            </NavLink>
+          </li>
           {user?.email ? (
             <>
               <li>
@@ -135,6 +140,14 @@ const Navbar = () => {
                           className="text-slate-950 font-semibold"
                         >
                           Volunteer
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/community"
+                          className="text-slate-950 font-semibold"
+                        >
+                          Community
                         </NavLink>
                       </li>
 

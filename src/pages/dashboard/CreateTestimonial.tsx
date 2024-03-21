@@ -7,7 +7,6 @@ import { FieldValues } from "react-hook-form";
 const CreateTestimonial = () => {
   const [createTestimonial] = useCreatetTestimonialMutation();
   const onSubmit = (data: FieldValues) => {
-    console.log({ data });
     createTestimonial(data);
   };
   return (
