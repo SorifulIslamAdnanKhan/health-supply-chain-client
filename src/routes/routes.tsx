@@ -35,9 +35,7 @@ const router = createBrowserRouter([
         path: "/supplies/:id",
         element: <SupplyDetails />,
         loader: ({ params }) =>
-          fetch(
-            `https://l2-b2-frontend-path-assignment-6-server-starter-pack-snowy.vercel.app/api/v1/supply/${params.id}`
-          ),
+          fetch(`http://localhost:5000/api/v1/supply/${params.id}`),
       },
       {
         path: "/volunteer",

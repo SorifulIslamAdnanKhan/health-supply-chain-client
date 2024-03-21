@@ -1,3 +1,6 @@
+import FAQsSection from "@/components/FAQsSection";
+import TeamSection from "@/components/TeamSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import {
   Table,
   TableBody,
@@ -48,6 +51,9 @@ const AboutUs = () => {
           ))}
         </TableBody>
       </Table>
+      <TeamSection />
+      <TestimonialsSection />
+      <FAQsSection />
     </section>
   );
 };
