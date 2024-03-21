@@ -50,6 +50,11 @@ const Navbar = () => {
               Community
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/leaderboard" className="text-slate-950 font-semibold">
+              Leaderboard
+            </NavLink>
+          </li>
           {user?.email ? (
             <>
               <li>
@@ -150,7 +155,14 @@ const Navbar = () => {
                           Community
                         </NavLink>
                       </li>
-
+                      <li>
+                        <NavLink
+                          to="/leaderboard"
+                          className="text-slate-950 font-semibold"
+                        >
+                          Leaderboard
+                        </NavLink>
+                      </li>
                       {user?.email ? (
                         <>
                           <li>

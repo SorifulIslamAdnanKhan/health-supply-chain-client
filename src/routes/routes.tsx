@@ -5,6 +5,7 @@ import Error from "@/error/Error";
 import AboutUs from "@/pages/AboutUs";
 import Community from "@/pages/Community";
 import Home from "@/pages/Home";
+import Leaderboard from "@/pages/Leaderboard";
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
 import Supplies from "@/pages/Supplies";
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "/community",
         element: <Community />,
+      },
+      {
+        path: "/leaderboard",
+        element: <Leaderboard />,
       },
     ],
   },

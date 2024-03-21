@@ -1,17 +1,22 @@
 import HMForm from "@/components/form/HMForm";
 import HMInput from "@/components/form/HMInput";
 import { Button } from "@/components/ui/button";
+import { useCurrentUser } from "@/redux/features/auth/authSlice";
 import { useCreateSupplyMutation } from "@/redux/features/supply/supplyApi";
+import { useAppSelector } from "@/redux/hooks";
 import { FieldValues } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 
 const CreateSupply = () => {
+  const user = useAppSelector(useCurrentUser);
+  const email = user;
+
   const navigate = useNavigate();
   const [createSupply] = useCreateSupplyMutation();
 
   const onSubmit = (data: FieldValues) => {
     const amount = parseFloat(data.amount);
-    createSupply({ ...data, amount });
+    createSupply({ ...data, amount, email });
     navigate("/dashboard/supplies");
   };
 
