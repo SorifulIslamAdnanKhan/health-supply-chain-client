@@ -6,7 +6,7 @@ Github Repository: https://github.com/SorifulIslamAdnanKhan/health-supply-chain-
 
 Live Site Link: https://smart-health-supply-chain-client.vercel.app/
 
-Presentation Video: https://drive.google.com/file/d/1fENPfJbdqMxHLHHXU0Oa2F-Oe362PhAj/view?usp=sharing
+Presentation Video: https://drive.google.com/file/d/1rIaVqrO_y6Mlv3yZpZ_pZgyhd8R13d4m/view?usp=sharing
 
 # Features
 
