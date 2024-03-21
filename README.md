@@ -2,9 +2,9 @@
 
 Name: Smart Health & Medical Care App
 
-Github Repository: https://github.com/Porgramming-Hero-web-course/l2-b2-assignment-6-fronten-SorifulIslamAdnanKhan
+Github Repository: https://github.com/SorifulIslamAdnanKhan/health-supply-chain-client
 
-Live Site Link: https://health-supply-chain-client.vercel.app/
+Live Site Link: https://smart-health-supply-chain-client.vercel.app/
 
 Presentation Video: https://drive.google.com/file/d/1fENPfJbdqMxHLHHXU0Oa2F-Oe362PhAj/view?usp=sharing
 
@@ -18,6 +18,10 @@ Presentation Video: https://drive.google.com/file/d/1fENPfJbdqMxHLHHXU0Oa2F-Oe36
 - Create a responsive dashboard.
 - User can easily register and login to the website.
 - User can easily post, retrive, update and delete data for supply.
+- User can post comment.
+- User can participate as a volunteer.
+- Added a leaderboard to display donor information.
+- Implement dark mood and light mood theme.
 - Use RTK Query cashing to update and delete real time data.
 - Display supply posts, gallery images dynamically.
 - Create a interactive pie chart using Rechart library.
@@ -43,7 +47,7 @@ Note: Make sure you have Node.js and npm installed on your system before startin
 
 # Step 1:
 
-Go to my Github Repository and click the green 'code' button. Copy this link: https://github.com/Porgramming-Hero-web-course/l2-b2-assignment-6-fronten-SorifulIslamAdnanKhan from the HTTPS tab to clone the project.
+Go to my Github Repository and click the green 'code' button. Copy this link: https://github.com/SorifulIslamAdnanKhan/health-supply-chain-client from the HTTPS tab to clone the project.
 
 # Step 2:
 
