@@ -1,30 +1,25 @@
 import HMForm from "@/components/form/HMForm";
 import HMInput from "@/components/form/HMInput";
 import { Button } from "@/components/ui/button";
-import { useCreateVolunteerMutation } from "@/redux/features/volunteer/volunteerApi";
+import { useCreatetTestimonialMutation } from "@/redux/features/testimonial/testimonial.Api";
 import { FieldValues } from "react-hook-form";
 
-const Volunteer = () => {
-  const [createVolunteer] = useCreateVolunteerMutation();
+const CreateTestimonial = () => {
+  const [createTestimonial] = useCreatetTestimonialMutation();
   const onSubmit = (data: FieldValues) => {
-    createVolunteer(data);
+    console.log({ data });
+    createTestimonial(data);
   };
   return (
     <div className="h-screen max-w-[1200px] mx-auto ">
-      <h2 className="my-10 text-center">Volunteer</h2>
+      <h2 className="my-10 text-center">Create Testimonial</h2>
       <div className="w-full md:max-w-[450px] mx-auto p-4">
         <HMForm onSubmit={onSubmit}>
           <div>
-            <HMInput type="text" name="name" placeholder="Name" />
+            <HMInput type="text" name="author" placeholder="Author" />
           </div>
           <div className="my-4">
-            <HMInput type="email" name="email" placeholder="Email" />
-          </div>
-          <div>
-            <HMInput type="text" name="phone" placeholder="Phone" />
-          </div>
-          <div className="my-4">
-            <HMInput type="text" name="location" placeholder="Location" />
+            <HMInput type="text" name="description" placeholder="Description" />
           </div>
           <div>
             <HMInput type="text" name="image" placeholder="Picture" />
@@ -38,4 +33,4 @@ const Volunteer = () => {
   );
 };
 
-export default Volunteer;
+export default CreateTestimonial;

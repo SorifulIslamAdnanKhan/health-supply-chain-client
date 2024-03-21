@@ -11,6 +11,7 @@ import SupplyDetails from "@/pages/SupplyDetails";
 import Volunteer from "@/pages/Volunteer";
 import AllSupplies from "@/pages/dashboard/AllSupplies";
 import CreateSupply from "@/pages/dashboard/CreateSupply";
+import CreateTestimonial from "@/pages/dashboard/CreateTestimonial";
 import Dashboard from "@/pages/dashboard/Dashboard";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard/supplies",
         element: <AllSupplies />,
+      },
+      {
+        path: "/dashboard/create-testimonial",
+        element: <CreateTestimonial />,
       },
     ],
   },
