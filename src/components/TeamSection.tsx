@@ -19,7 +19,7 @@ const TeamSection = () => {
             backgroundColor: "#3182CE",
             color: "white",
           }}
-          className="flex flex-col bg-slate-50 items-center"
+          className="flex flex-col bg-slate-50 dark:bg-slate-950 items-center"
         >
           <img
             src="https://images.unsplash.com/photo-1590086782792-42dd2350140d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
@@ -35,7 +35,7 @@ const TeamSection = () => {
             backgroundColor: "#3182CE",
             color: "white",
           }}
-          className="flex flex-col bg-slate-50 items-center"
+          className="flex flex-col bg-slate-50 dark:bg-slate-950 items-center"
         >
           <img
             src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
@@ -51,7 +51,7 @@ const TeamSection = () => {
             backgroundColor: "#3182CE",
             color: "white",
           }}
-          className="flex flex-col bg-slate-50 items-center"
+          className="flex flex-col bg-slate-50 dark:bg-slate-950 items-center"
         >
           <img
             src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
@@ -68,7 +68,7 @@ const TeamSection = () => {
             color: "white",
           }}
           whileTap={{ scale: 0.9 }}
-          className="flex flex-col bg-slate-50 items-center"
+          className="flex flex-col bg-slate-50 dark:bg-slate-950 items-center"
         >
           <img
             src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"

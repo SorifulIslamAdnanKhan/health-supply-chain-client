@@ -35,7 +35,10 @@ const AboutSection = () => {
           <img src={ceo} className=" rounded-md" alt="CEO" />
         </motion.div>
         {/* Our Story Area */}
-        <motion.div variants={item} className="w-full p-4 bg-white rounded-md">
+        <motion.div
+          variants={item}
+          className="w-full p-4 bg-white rounded-md dark:text-black"
+        >
           <h2>Our Story</h2>
           <p className="max-w-full md:max-w-[100ch] my-5 leading-loose">
             Aliquam tempus arcu eget felis feugiat, ac condimentum mi mollis.
