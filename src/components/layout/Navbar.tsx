@@ -31,8 +31,18 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
+            <NavLink to="/about-us" className="text-slate-950 font-semibold">
+              About Us
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/supplies" className="text-slate-950 font-semibold">
               All Supplies
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/volunteer" className="text-slate-950 font-semibold">
+              Volunteer
             </NavLink>
           </li>
           {user?.email ? (
@@ -105,10 +115,26 @@ const Navbar = () => {
                       </li>
                       <li>
                         <NavLink
+                          to="/about-us"
+                          className="text-slate-950 font-semibold"
+                        >
+                          About Us
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
                           to="/supplies"
                           className="text-slate-950 font-semibold"
                         >
                           All Supplies
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          to="/volunteer"
+                          className="text-slate-950 font-semibold"
+                        >
+                          Volunteer
                         </NavLink>
                       </li>
 

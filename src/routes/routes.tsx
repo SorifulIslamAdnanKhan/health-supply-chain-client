@@ -2,11 +2,13 @@ import App from "@/App";
 import DashboardLayout from "@/components/layout/DashboardLayout";
 import ProtectedRoute from "@/components/layout/ProtectedRoute";
 import Error from "@/error/Error";
+import AboutUs from "@/pages/AboutUs";
 import Home from "@/pages/Home";
 import Login from "@/pages/Login";
 import Register from "@/pages/Register";
 import Supplies from "@/pages/Supplies";
 import SupplyDetails from "@/pages/SupplyDetails";
+import Volunteer from "@/pages/Volunteer";
 import AllSupplies from "@/pages/dashboard/AllSupplies";
 import CreateSupply from "@/pages/dashboard/CreateSupply";
 import Dashboard from "@/pages/dashboard/Dashboard";
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
           fetch(
             `https://l2-b2-frontend-path-assignment-6-server-starter-pack-snowy.vercel.app/api/v1/supply/${params.id}`
           ),
+      },
+      {
+        path: "/volunteer",
+        element: <Volunteer />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
       },
     ],
   },
