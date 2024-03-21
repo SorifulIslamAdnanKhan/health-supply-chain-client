@@ -23,7 +23,7 @@ const Leaderboard = () => {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead>Email</TableHead>
+            <TableHead>Username</TableHead>
             <TableHead>Amount</TableHead>
           </TableRow>
         </TableHeader>

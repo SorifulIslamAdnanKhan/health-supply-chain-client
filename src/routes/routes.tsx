@@ -35,7 +35,9 @@ const router = createBrowserRouter([
         path: "/supplies/:id",
         element: <SupplyDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/api/v1/supply/${params.id}`),
+          fetch(
+            `https://smart-health-supply-chain-server.vercel.app/api/v1/supply/${params.id}`
+          ),
       },
       {
         path: "/volunteer",
