@@ -38,26 +38,50 @@ const DonateModal = ({ data }: TDonateModalProps) => {
                 <DialogTitle>User Info</DialogTitle>
               </div>
               <div>
-                <Input type="email" defaultValue={user?.email} />
+                <Input
+                  type="email"
+                  className="dark:text-white"
+                  defaultValue={user?.email}
+                />
               </div>
               <div className="mt-4">
                 <div className="my-2">
                   <DialogTitle>Supply Info</DialogTitle>
                 </div>
                 <div>
-                  <Input type="text" defaultValue={data.title} />
+                  <Input
+                    type="text"
+                    className="dark:text-white"
+                    defaultValue={data.title}
+                  />
                 </div>
                 <div className="my-4">
-                  <Input type="text" defaultValue={data.category} />
+                  <Input
+                    type="text"
+                    className="dark:text-white"
+                    defaultValue={data.category}
+                  />
                 </div>
                 <div>
-                  <Input type="number" defaultValue={data.amount} />
+                  <Input
+                    type="number"
+                    className="dark:text-white"
+                    defaultValue={data.amount}
+                  />
                 </div>
                 <div className="my-4">
-                  <Input type="text" defaultValue={data.description} />
+                  <Input
+                    type="text"
+                    className="dark:text-white"
+                    defaultValue={data.description}
+                  />
                 </div>
                 <div className="my-4">
-                  <Input type="text" defaultValue={data.image} />
+                  <Input
+                    type="text"
+                    className="dark:text-white"
+                    defaultValue={data.image}
+                  />
                 </div>
                 <div className="my-4">
                   <Link to="/dashboard">

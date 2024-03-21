@@ -26,19 +26,44 @@ const CreateSupply = () => {
       <div className="w-full md:max-w-[450px] mx-auto p-4">
         <HMForm onSubmit={onSubmit}>
           <div>
-            <HMInput type="text" name="title" placeholder="Title" />
+            <HMInput
+              type="text"
+              name="title"
+              className="dark:text-white"
+              placeholder="Title"
+            />
           </div>
           <div className="my-4">
-            <HMInput type="text" name="category" placeholder="Category" />
+            <HMInput
+              type="text"
+              name="category"
+              className="dark:text-white"
+              placeholder="Category"
+            />
           </div>
           <div>
-            <HMInput type="number" name="amount" placeholder="Amount" />
+            <HMInput
+              type="number"
+              name="amount"
+              className="dark:text-white"
+              placeholder="Amount"
+            />
           </div>
           <div className="my-4">
-            <HMInput type="text" name="description" placeholder="Description" />
+            <HMInput
+              type="text"
+              name="description"
+              className="dark:text-white"
+              placeholder="Description"
+            />
           </div>
           <div className="my-4">
-            <HMInput type="text" name="image" placeholder="Image" />
+            <HMInput
+              type="text"
+              name="image"
+              className="dark:text-white"
+              placeholder="Image"
+            />
           </div>
           <div className="my-4">
             <Button type="submit">Submit</Button>

@@ -4,10 +4,17 @@ import { Input } from "../ui/input";
 type TInputProps = {
   type: string;
   name: string;
+  className?: string;
   defaultValue?: string | number;
   placeholder: string;
 };
-const HMInput = ({ type, name, placeholder, defaultValue }: TInputProps) => {
+const HMInput = ({
+  type,
+  name,
+  placeholder,
+  className,
+  defaultValue,
+}: TInputProps) => {
   return (
     <>
       <Controller
@@ -18,6 +25,7 @@ const HMInput = ({ type, name, placeholder, defaultValue }: TInputProps) => {
             type={type}
             placeholder={placeholder}
             defaultValue={defaultValue}
+            className={className}
           />
         )}
       />

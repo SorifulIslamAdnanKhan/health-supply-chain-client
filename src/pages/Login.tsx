@@ -31,10 +31,20 @@ const Login = () => {
       <div className="w-full md:max-w-[450px] mx-auto p-4">
         <HMForm onSubmit={onSubmit}>
           <div className="my-4">
-            <HMInput type="email" name="email" placeholder="Email" />
+            <HMInput
+              type="email"
+              name="email"
+              className="dark:text-white"
+              placeholder="Email"
+            />
           </div>
           <div>
-            <HMInput type="password" name="password" placeholder="Password" />
+            <HMInput
+              type="password"
+              name="password"
+              className="dark:text-white"
+              placeholder="Password"
+            />
           </div>
           <div className="my-4">
             <Button type="submit">Submit</Button>

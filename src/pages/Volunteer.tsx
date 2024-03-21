@@ -15,19 +15,44 @@ const Volunteer = () => {
       <div className="w-full md:max-w-[450px] mx-auto p-4">
         <HMForm onSubmit={onSubmit}>
           <div>
-            <HMInput type="text" name="name" placeholder="Name" />
+            <HMInput
+              type="text"
+              name="name"
+              className="dark:text-white"
+              placeholder="Name"
+            />
           </div>
           <div className="my-4">
-            <HMInput type="email" name="email" placeholder="Email" />
+            <HMInput
+              type="email"
+              name="email"
+              className="dark:text-white"
+              placeholder="Email"
+            />
           </div>
           <div>
-            <HMInput type="text" name="phone" placeholder="Phone" />
+            <HMInput
+              type="text"
+              name="phone"
+              className="dark:text-white"
+              placeholder="Phone"
+            />
           </div>
           <div className="my-4">
-            <HMInput type="text" name="location" placeholder="Location" />
+            <HMInput
+              type="text"
+              name="location"
+              className="dark:text-white"
+              placeholder="Location"
+            />
           </div>
           <div>
-            <HMInput type="text" name="image" placeholder="Picture" />
+            <HMInput
+              type="text"
+              name="image"
+              className="dark:text-white"
+              placeholder="Picture"
+            />
           </div>
           <div className="my-4">
             <Button type="submit">Submit</Button>

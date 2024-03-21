@@ -45,6 +45,7 @@ const UpdateModal = ({ supplyData }: TUpdateModalProps) => {
                   type="text"
                   defaultValue={supplyData.title}
                   name="title"
+                  className="dark:text-white"
                   placeholder="Title"
                 />
               </div>
@@ -53,6 +54,7 @@ const UpdateModal = ({ supplyData }: TUpdateModalProps) => {
                   type="text"
                   defaultValue={supplyData.category}
                   name="category"
+                  className="dark:text-white"
                   placeholder="Category"
                 />
               </div>
@@ -61,6 +63,7 @@ const UpdateModal = ({ supplyData }: TUpdateModalProps) => {
                   type="number"
                   defaultValue={supplyData.amount}
                   name="amount"
+                  className="dark:text-white"
                   placeholder="Amount"
                 />
               </div>
@@ -69,6 +72,7 @@ const UpdateModal = ({ supplyData }: TUpdateModalProps) => {
                   type="text"
                   defaultValue={supplyData.description}
                   name="description"
+                  className="dark:text-white"
                   placeholder="Description"
                 />
               </div>
@@ -77,6 +81,7 @@ const UpdateModal = ({ supplyData }: TUpdateModalProps) => {
                   type="text"
                   defaultValue={supplyData.image}
                   name="image"
+                  className="dark:text-white"
                   placeholder="Image"
                 />
               </div>

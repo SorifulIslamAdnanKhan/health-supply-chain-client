@@ -32,10 +32,20 @@ const Community = () => {
         <div className="w-full md:max-w-[450px] mx-auto p-4">
           <HMForm onSubmit={onSubmit}>
             <div>
-              <HMInput type="text" name="name" placeholder="User Name" />
+              <HMInput
+                type="text"
+                name="name"
+                className="dark:text-white"
+                placeholder="User Name"
+              />
             </div>
             <div className="my-4">
-              <HMInput type="text" name="comment" placeholder="Comment" />
+              <HMInput
+                type="text"
+                name="comment"
+                className="dark:text-white"
+                placeholder="Comment"
+              />
             </div>
             <div className="my-4">
               <Button type="submit">Submit</Button>
