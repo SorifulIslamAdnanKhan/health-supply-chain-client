@@ -23,8 +23,8 @@ const SupplySection = () => {
           condimentum interdum.
         </p>
       </div>
-      <div className="grid md:grid-cols-3 gap-4 p-4 md:px-10 lg:px-24 mt-10">
-        {data?.data?.slice(0, 6).map((supply: TSupply) => (
+      <div className="grid md:grid-cols-4 gap-4 p-4 md:px-10 lg:px-24 mt-10">
+        {data?.data?.slice(0, 8).map((supply: TSupply) => (
           <Card key={supply._id}>
             <CardHeader>
               <img src={supply.image} alt="" />

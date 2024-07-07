@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo/logo.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer className="bg-stone-700 py-12 p-4 md:px-24 text-white">
+    <footer className="bg-stone-900 pt-12 pb-4 p-4 md:px-24 text-white">
       <div className="flex justify-between items-start flex-col lg:flex-row gap-4 py-5">
         <div>
           <img src={logo} alt="Smart Health Care Logo" className="w-16" />

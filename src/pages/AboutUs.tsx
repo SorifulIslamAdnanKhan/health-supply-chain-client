@@ -1,4 +1,5 @@
 import FAQsSection from "@/components/FAQsSection";
+import Organizations from "@/components/Organizations";
 import TeamSection from "@/components/TeamSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import {
@@ -53,6 +54,7 @@ const AboutUs = () => {
       </Table>
       <TeamSection />
       <TestimonialsSection />
+      <Organizations />
       <FAQsSection />
     </section>
   );

@@ -14,7 +14,7 @@ const Supplies = () => {
   const { data } = useGetAllSuppliesQuery(undefined);
 
   return (
-    <div className="grid md:grid-cols-3 gap-4 p-4 md:px-10 lg:px-24 mt-10">
+    <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 md:px-10 lg:px-24 mt-10">
       {data?.data?.map((supply: TSupply) => (
         <Card key={supply._id}>
           <CardHeader>
