@@ -20,9 +20,11 @@ const Login = () => {
       password: data.password,
     };
     const res = await login(userInfo).unwrap();
-    const user = verifyToken(res.token) as TUser;
 
-    dispatch(setUser({ user: user, token: res.token }));
+    const { token, role } = res;
+    const user = verifyToken(token) as TUser;
+
+    dispatch(setUser({ user: { ...user, role }, token }));
 
     navigate("/dashboard");
   };

@@ -4,8 +4,8 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 type TUser = {
   name: string;
   email: string;
-  password: string;
   role: string;
+  password: string;
 };
 
 type TInitialState = {

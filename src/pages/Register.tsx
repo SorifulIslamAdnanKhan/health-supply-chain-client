@@ -11,6 +11,7 @@ const Register = () => {
   const [createUser] = useCreateUserMutation();
 
   const onSubmit = (data: FieldValues) => {
+    console.log(data);
     createUser(data);
     navigate("/login");
   };
@@ -49,15 +50,7 @@ const Register = () => {
                   placeholder="Password"
                 />
               </div>
-              <div>
-                <HMInput
-                  type="role"
-                  name="role"
-                  defaultValue="Donor"
-                  className="dark:text-white"
-                  placeholder="Role"
-                />
-              </div>
+
               <div className="my-4">
                 <Button type="submit">Submit</Button>
               </div>

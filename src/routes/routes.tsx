@@ -71,11 +71,11 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "/dashboard/create-supply",
+        path: "/dashboard/admin/create-supply",
         element: <CreateSupply />,
       },
       {
-        path: "/dashboard/supplies",
+        path: "/dashboard/admin/supplies",
         element: <AllSupplies />,
       },
       {

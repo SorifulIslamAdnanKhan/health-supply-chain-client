@@ -9,16 +9,23 @@ import { useNavigate } from "react-router-dom";
 
 const CreateSupply = () => {
   const user = useAppSelector(useCurrentUser);
-  const email = user;
+
+  const email = user?.email;
+  const role = user?.role;
 
   const navigate = useNavigate();
+
   const [createSupply] = useCreateSupplyMutation();
 
   const onSubmit = (data: FieldValues) => {
     const amount = parseFloat(data.amount);
     createSupply({ ...data, amount, email });
-    navigate("/dashboard/supplies");
+    navigate("/dashboard/admin/supplies");
   };
+
+  if (role !== "Admin") {
+    return <div className="text-red-600">Your are not an admin!</div>;
+  }
 
   return (
     <div className="h-screen max-w-[1200px] mx-auto ">

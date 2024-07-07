@@ -8,10 +8,12 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { useCurrentUser } from "@/redux/features/auth/authSlice";
 import {
   useDeleteSupplyMutation,
   useGetAllSuppliesQuery,
 } from "@/redux/features/supply/supplyApi";
+import { useAppSelector } from "@/redux/hooks";
 
 import { Trash2 } from "lucide-react";
 import { useState } from "react";
@@ -30,7 +32,13 @@ const AllSupplies = () => {
   const [deleteSupply] = useDeleteSupplyMutation();
   const [modalOpen, setModalOpen] = useState(false);
   const [supplyToDelete, setSupplyToDelete] = useState("");
+  const user = useAppSelector(useCurrentUser);
 
+  const role = user?.role;
+
+  if (role !== "Admin") {
+    return <div className="text-red-600">Your are not an admin!</div>;
+  }
   // Handle delete
 
   const handleDelete = (_id: string) => {
