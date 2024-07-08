@@ -25,6 +25,7 @@ export type TSupply = {
   title: string;
   amount: number;
   description: string;
+  email?: string;
 };
 
 const AllSupplies = () => {

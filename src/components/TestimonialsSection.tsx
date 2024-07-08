@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
           className="w-full mt-10"
         >
           <CarouselContent>
-            {data?.data?.map((testimonial: TTestimonial) => (
+            {data?.data?.slice(0, 5).map((testimonial: TTestimonial) => (
               <CarouselItem
                 key={testimonial._id}
                 className="md:basis-1/2 lg:basis-1/3"
